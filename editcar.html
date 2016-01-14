@@ -1,0 +1,13 @@
+<h1 class="ng-scope">New Car</h1>
+<!-- ngIf: !loading --><div ng-if="!loading" class="ng-scope">
+    <div class="form-group">
+        <label for="car-number">Car Number</label>
+        <input type="text" class="form-control ng-pristine ng-untouched ng-valid" id="car-number" ng-model="car.Number">
+    </div>
+    <div class="form-group">
+        <label for="car-owner">Owner</label>
+        <input type="text" class="form-control ng-pristine ng-untouched ng-valid" id="car-owner" ng-model="car.Owner">
+    </div>
+    <button class="btn btn-primary" ng-click="save()">Submit</button>
+</div><!-- end ngIf: !loading -->
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FirLumber Rally</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-app="app" ng-controller="MainController">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">FirLumber Rally</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{ active: routeActive('/')}"><a href="#/">Home</a></li>
+                    <li ng-class="{ active: routeActive('/carnew')}"><a href="#/carnew">New Car</a></li>
+                    <li ng-class="{ active: routeActive('/carlist')}"><a href="#/carlist">Car List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" ng-view></div>
+    <div class="loader" ng-if="loading">Loading...</div>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/ace.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/angular-ui/ui-ace/master/src/ui-ace.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
